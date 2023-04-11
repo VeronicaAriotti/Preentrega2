@@ -17,8 +17,6 @@ ul{
 .img-fluid{width: 100%; height: auto;}
 
 
-
-    
 /* MEDIA QUERIES */
 /* DESKTOP */
 @media (min-width:1024px){
@@ -66,6 +64,7 @@ ul{
         font-size: medium;
         font-family: 'Architects Daughter', cursive;
     }
+    
     .productosinicio{
         text-align: left;
         text-decoration: solid;
@@ -116,7 +115,19 @@ ul{
     }
     .bg-itppal{
         background-color: beige;
+        font-family: 'Architects Daughter', cursive;
+        justify-content: stretch;}
+    .titulotip{
+        background-color: beige;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
+        text-align: center;
+        
     }
+    .f20{
+        font-size: 20px; 
+     }
+
     header{
         display: flex;
         flex-direction: row;
@@ -178,10 +189,67 @@ ul{
         margin: 30px;
         border-color: antiquewhite;
         border-radius: 20%;
-        background-color:lemonchiffon}
+        background-color:lemonchiffon;
+        text-align: center;
 
+    }
+    .gridMaintips{
+        display: grid;
+        grid-template-areas:
+        "bienvenidos bienvenidos"
+        "tip1 tip2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .bienvenidos{grid-area: bienvenidos;}
+    .tip1{grid-area: tip1;}
+    .tip2{grid-area: tip2;}
+    .titulotip{
+        background-color: beige;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
+        text-align: center;
+        color: darkred;
+    }
+    .tip1{
+        background-color: beige;
+        padding: 10px;
+        margin:10px;
+        border-color: chocolate;
     
-}
+    }
+    .tip2{
+        background-color: beige;
+        padding: 10px;
+        margin:10px;
+        border-color: chocolate;
+    }
+    .gridMaincontacto{
+        display: grid;
+        grid-template-areas:
+        "warning warning warning"
+        "warning2 warning2 warning2";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto;
+
+    }
+    .warning{grid-area: warning;}
+    .warning2{grid-area: warning2;}
+
+    .warning{
+        font-size: xx-large;
+        color: red;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive ;
+    }
+    .warning2{
+        font-size: xx-large;
+        color: blue;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive ;
+
+
+    }
       
 
 
@@ -280,7 +348,90 @@ ul{
     .historia{grid-area: historia;}
     .PersonaA{grid-area: PersonaA;}
     .PersonaB{grid-area: PersonaB;}
+    h4{
+        text-align:center;
+        font-size: large;
+        font-family: 'Architects Daughter', cursive;
+    }
+    p{
+        font-family: 'Architects Daughter', cursive; 
+        text-align: justify; 
+    }
+    .gridMaintips{
+        display: grid;
+        grid-template-areas:
+        "bienvenidos bienvenidos"
+        "tip1 tip2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .bienvenidos{grid-area: bienvenidos;}
+    .tip1{grid-area: tip1;}
+    .tip2{grid-area: tip2;}
+    .titulotip{
+        background-color: beige;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 25px;
+        text-align: center;
+        color: darkred;
+    }
+    .tip1{
+        background-color: beige;
+        padding: 10px;
+        margin:10px;
+        border-color: chocolate;
     
+    }
+    .tip2{
+        background-color: beige;
+        padding: 10px;
+        margin:10px;
+        border-color: chocolate;
+    
+    
+    }
+    
+    .tituloProdu{
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    .historia{
+        padding: 20px;
+        margin: 30px;
+        border-color: antiquewhite;
+        border-radius: 20%;
+        background-color:lemonchiffon;
+        text-align: center;
+
+    }
+    .gridMaincontacto{
+        display: grid;
+        grid-template-areas:
+        "warning warning warning"
+        "warning2 warning2 warning2";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto;
+
+    }
+    .warning{grid-area: warning;}
+    .warning2{grid-area: warning2;}
+
+    .warning{
+        font-size: xx-large;
+        color: red;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive ;
+    }
+    .warning2{
+        font-size: xx-large;
+        color: blue;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive ;
+
+
+    }
  
 
 
