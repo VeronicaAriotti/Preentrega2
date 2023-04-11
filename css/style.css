@@ -1,0 +1,258 @@
+/* general */
+*{margin: 0;} 
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+li{
+    padding:10px;
+    margin-top: 90px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin:0%
+}
+.img-fluid{width: 100%; height: auto;}
+
+
+    
+/* MEDIA QUERIES */
+/* DESKTOP */
+@media (min-width:1024px){
+    .indexgrid{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header;background-color: rgb(71, 75, 79);}
+    main{grid-area: main; }
+    footer{grid-area: footer;background-color: rgb(71, 75, 79) ;}
+
+    .gridMainIndex{
+        display: grid;
+        grid-template-areas: 
+        "imagenprincipal imagenprincipal imagenprincipal"
+        "bienvenidos bienvenidos bienvenidos"
+        "productosinicio productosinicio productosinicio"
+        "Pasteleria Chocolateria Panaderia"
+        "tips tips tips";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    .imagenprincipal{grid-area: imagenprincipal;}
+    .bienvenidos{grid-area: bienvenidos;}
+    .productosinicio{grid-area: productosinicio;}
+    .Pasteleria{grid-area: Pasteleria;}
+    .Chocolateria{grid-area: Chocolateria;}
+    .Panaderia{grid-area: Panaderia;}
+    .tips{grid-area: tips;}    
+    .bienvenidos{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Architects Daughter', cursive;
+        color: black;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+    .prod{padding:5px;}
+    h3{text-align: center;
+        font-size: medium;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .productosinicio{
+        text-align: left;
+        text-decoration: solid;
+        font-size: large;
+        font-family: 'Architects Daughter', cursive;
+        margin-bottom: 10px;
+    }
+    .tips{
+        text-align: left;
+        text-decoration: solid;
+        font-family: 'Architects Daughter', cursive;
+        margin-bottom: 10px;
+    }
+    .f30{
+        font-size: 30px;
+    }
+    .f15{
+        font-size: 15px;
+    }
+    
+    .mb20{
+        margin-bottom: 20px;
+    }
+    .img-rrss{width: 30px;height: 30px; background-color: rgb(71, 75, 79) ;}
+    
+    footer{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1px;
+        color: aliceblue; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mt20{
+        margin-top: 10px;
+    }
+    .mr20{
+        margin-right: 20px;
+    }
+    .colorW{
+        color: blanchedalmond;
+        font-family: 'Architects Daughter', cursive;
+        font-size: small;
+    }
+    .bg-itppal{
+        background-color: beige;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0px;
+        color: aliceblue; 
+    }
+    .gridMainProductos{
+        display:grid;
+        grid-template-areas:
+        "tituloProdu tituloProdu"
+        "prod1 prod2" 
+        "prod3 prod4";
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto;
+    }
+    .tituloProdu{grid-area: tituloProdu;}
+    .prod1{grid-area:prod1;}
+    .prod2{grid-area:prod2;}
+    .prod3{grid-area:prod3;}
+    .prod4{grid-area:prod4;}
+    .prod{
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        padding: 3px;
+    }
+    .tituloProdu{
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+}
+      
+
+
+/* MOBILE */
+@media(max-width:768px){
+    header, main, footer{display: flex;flex-direction: column;align-items: center;}
+    ul{display:flex}
+    .logo{width: 40%;height: auto}
+    /* .logofooter{width: 40%;height: auto} */
+    li{margin-top: 10px;font-size: smaller; text-decoration: none;}
+    ul{margin-right: 5px;}
+    header{background-color: rgb(71, 75, 79);}
+    
+    .bienvenidos{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Architects Daughter', cursive;
+        color: black;
+        margin-bottom: 20px;
+        background-color: white;
+
+    }
+    .productosinicio{
+        text-align: left;
+        text-decoration: solid;
+        font-size: larger;
+        font-family: 'Architects Daughter', cursive;
+        margin-bottom: 10px;}
+
+    .tips{
+     text-align: left;
+     text-decoration: solid;
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 10px;}
+    .img-rrss{width: 20px;height: 20px; background-color: rgb(71, 75, 79) ;}
+    
+    footer{
+        display:flex;
+        flex-direction: column;
+        background-color: rgb(71, 75, 79) ;
+        /* flex-wrap: wrap; */
+        margin-top: 10px;
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 1px;
+        color: aliceblue; 
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    h3{ font-size: medium;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .footer{
+        font-size: 10px;
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%
+    }
+    .gridMainProductos{
+        display:grid;
+        grid-template-areas:
+        "tituloProdu tituloProdu"
+        "prod1 prod2" 
+        "prod3 prod4";
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto auto auto;
+    }
+    .tituloProdu{grid-area: tituloProdu;}
+    .prod1{grid-area:prod1;}
+    .prod2{grid-area:prod2;}
+    .prod3{grid-area:prod3;}
+    .prod4{grid-area:prod4;}
+    .prod{
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        padding: 3px;
+    }
+    .tituloProdu{
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+ 
+
+
+
+
+
+
+
+
+} 
+    
+
+    
+
